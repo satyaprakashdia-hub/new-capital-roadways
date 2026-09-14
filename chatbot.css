@@ -1,0 +1,21 @@
+/* NCRW FAQ chatbot - no API, no backend, no paid AI */
+.ncrw-chat-toggle{position:fixed;right:22px;bottom:24px;z-index:1800;width:58px;height:58px;border:0;border-radius:50%;background:#d71920;color:#fff;box-shadow:0 10px 28px rgba(0,0,0,.22);font-size:25px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.2s ease}
+.ncrw-chat-toggle:hover{background:#b90f16;transform:translateY(-2px)}
+.ncrw-chat-toggle:focus-visible,.ncrw-chat-close:focus-visible,.ncrw-chat-send:focus-visible,.ncrw-chat-chip:focus-visible{outline:3px solid rgba(215,25,32,.28);outline-offset:2px}
+.ncrw-chat-panel{position:fixed;right:22px;bottom:94px;z-index:1800;width:min(370px,calc(100vw - 28px));height:min(570px,calc(100vh - 125px));background:#fff;border:1px solid #e4e4e4;border-radius:18px;box-shadow:0 20px 55px rgba(0,0,0,.2);display:none;overflow:hidden}
+.ncrw-chat-panel.open{display:flex;flex-direction:column;animation:ncrwChatIn .18s ease-out}
+@keyframes ncrwChatIn{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:none}}
+.ncrw-chat-head{background:#d71920;color:#fff;padding:16px 17px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.ncrw-chat-head strong{display:block;font-size:16px}.ncrw-chat-head small{display:block;margin-top:3px;opacity:.9;font-size:11px}
+.ncrw-chat-close{border:0;background:rgba(255,255,255,.16);color:#fff;width:34px;height:34px;border-radius:50%;font-size:22px;cursor:pointer;line-height:1}
+.ncrw-chat-body{flex:1;overflow:auto;padding:15px;background:#f8f8f8}
+.ncrw-chat-msg{max-width:88%;padding:10px 12px;border-radius:13px;margin:0 0 10px;font-size:13px;line-height:1.45;white-space:pre-line}
+.ncrw-chat-msg.bot{background:#fff;border:1px solid #e7e7e7;border-top-left-radius:5px}.ncrw-chat-msg.user{margin-left:auto;background:#d71920;color:#fff;border-top-right-radius:5px}
+.ncrw-chat-chips{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 2px}.ncrw-chat-chip{border:1px solid #ddd;background:#fff;color:#333;border-radius:999px;padding:8px 10px;font-size:11px;font-weight:700;cursor:pointer}.ncrw-chat-chip:hover{border-color:#d71920;color:#d71920}
+.ncrw-chat-foot{padding:10px;border-top:1px solid #e5e5e5;background:#fff}.ncrw-chat-form{display:flex;gap:7px}.ncrw-chat-input{min-width:0;flex:1;border:1px solid #ddd;border-radius:10px;padding:10px 11px;font-size:13px;outline:0}.ncrw-chat-input:focus{border-color:#d71920}.ncrw-chat-send{border:0;background:#d71920;color:#fff;border-radius:10px;padding:0 14px;font-weight:800;cursor:pointer}.ncrw-chat-send:hover{background:#b90f16}
+.ncrw-chat-note{text-align:center;color:#777;font-size:9.5px;margin:7px 0 0}
+.ncrw-chat-note a{color:#d71920;font-weight:800}
+@media (max-width:760px){
+  .ncrw-chat-toggle{right:14px;bottom:82px;width:54px;height:54px;font-size:23px}
+  .ncrw-chat-panel{right:10px;bottom:145px;width:calc(100vw - 20px);height:min(560px,calc(100vh - 175px));border-radius:16px}
+}

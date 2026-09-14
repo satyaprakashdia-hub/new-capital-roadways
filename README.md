@@ -1,10 +1,19 @@
-NCRW responsive website — final hero positioning fix.
+# NCRW Website – Responsive Polish Update
 
-Replace the existing files in the GitHub Pages repository with all files in this folder.
-Keep the Google verification HTML file. No domain or Google settings need to be changed.
+This package is a polished responsive update for New Capital Roadways.
 
-Hero fix:
-- SAFE / RELIABLE / ON TIME stays in the left text column.
-- Truck image has its own space and cannot be covered by decorative text.
-- Connecting India is placed beside the truck on desktop/tablet and below the truck on mobile.
-- Mobile/tablet/desktop layouts remain responsive.
+### Included improvements
+- Responsive layouts for phone, tablet and desktop.
+- Hero text and truck image are separated so text does not overlap the truck photo.
+- Truck image keeps its proportions and remains fully visible across screen sizes.
+- Cleaner spacing, typography, buttons and navigation.
+- Mobile navigation remains usable without squeezing the desktop menu.
+- Mobile quick-action bar: Call, WhatsApp and Get a Quote.
+- Existing contact numbers, WhatsApp links, location and website details are retained.
+- Existing Hanuman + NCRW branding image is retained.
+
+### GitHub Pages
+Replace the website files with the files in this package. Keep `index.html`, `style.css`, `script.js`, `config.js`, the verification HTML file, `CNAME`, and image assets in the repository root as applicable.
+
+
+Hero image: assets/ncrw-truck-hero.png is the exact uploaded truck photo. To change the hero picture later, replace that file with your new picture and keep the filename the same.
