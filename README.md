@@ -14,6 +14,3 @@ This package is a polished responsive update for New Capital Roadways.
 
 ### GitHub Pages
 Replace the website files with the files in this package. Keep `index.html`, `style.css`, `script.js`, `config.js`, the verification HTML file, `CNAME`, and image assets in the repository root as applicable.
-
-
-Hero image: assets/ncrw-truck-hero.png is the exact uploaded truck photo. To change the hero picture later, replace that file with your new picture and keep the filename the same.
